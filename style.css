@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title-banner {
+    
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.title-banner h1 {
+    color: white;
+    font-size: 100px;
+    
+}
+
+.img-banner {
+    text-align: center;
+    position: relative;
+    margin-top: -106px;
+    
+}
+
+.menutop {
+    padding-top: 20px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+}
+.banner-top{
+    background: #ffca46;
+    position: relative;
+}
+.menutop .logo{
+    font-size: 40px;
+}
+ul.navbar-nav.ml-auto.mt-2.mt-lg-0.ul-menu .nav-item {
+    padding-right: 40px;
+    position: relative;
+}
+ul.navbar-nav.ml-auto.mt-2.mt-lg-0.ul-menu .nav-item a{
+    position: relative;
+    padding: 2px 0;
+    display: inline-block;
+}
+ul.navbar-nav.ml-auto.mt-2.mt-lg-0.ul-menu .nav-item a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+ul.navbar-nav.ml-auto.mt-2.mt-lg-0.ul-menu .nav-item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+ul.navbar-nav.ml-auto.mt-2.mt-lg-0.ul-menu .nav-item ul{
+    width: 200px;
+    position: absolute;
+    background: white;
+    border: 1px black solid;
+    margin-top: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    padding: 15px 20px;
+}
+ul.navbar-nav.ml-auto.mt-2.mt-lg-0.ul-menu .nav-item:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+ul.navbar-nav.ml-auto.mt-2.mt-lg-0.ul-menu .nav-item ul li{
+    list-style: none;
+}
+ul.navbar-nav.ml-auto.mt-2.mt-lg-0.ul-menu .nav-item ul li a{
+    color: black;
+}
+ul.navbar-nav.ml-auto.mt-2.mt-lg-0.ul-menu .iconcard{
+    padding: 5px;
+    position: relative;
+}
+ul.navbar-nav.ml-auto.mt-2.mt-lg-0.ul-menu .iconcard a{
+    color: white;
+}
+ul.navbar-nav.ml-auto.mt-2.mt-lg-0.ul-menu .iconcard .card-content{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 250px;
+    background: white;
+    padding: 10px;
+    border: 1px black solid;
+    text-align: center;
+    color: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+ul.navbar-nav.ml-auto.mt-2.mt-lg-0.ul-menu .iconcard:hover .card-content{
+    opacity: 1;
+    visibility: visible;
+}
+ul.navbar-nav.ml-auto.mt-2.mt-lg-0.ul-menu .iconcard .card-content p a{
+    color: rgb(35, 24, 75);
+    font-size: 14px;
+}
+.title-content{
+    margin: 40px 0;
+}
+
+.item-content{
+    margin-bottom: 30px;
+}
+.item-content .item{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+.item-content .item .img1{
+    width: 100%;
+}
+.item-content .item .img2{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.item-content .item:hover .img2{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+.item-content .item .text-item{
+    display: flex;
+}
+.item-content .item .text-item .left{
+    width: 50%;
+}
+.item-content .item .text-item .right{
+    width: 50%;
+    text-align: right;
+}
+.item-content .item  .layer4{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.item-content .item:hover  .layer4{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: 0.5s;
+}
+.item-content .item  .layer5{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+    opacity: 0;
+} 
+.item-content .item:hover  .layer5{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+    opacity: 1;
+} 
+
